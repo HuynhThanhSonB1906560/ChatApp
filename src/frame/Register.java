@@ -78,7 +78,7 @@ public class Register extends JFrame {
 		
 		JButton btnNewButton = new JButton("\u0110\u0103ng k\u00FD");
 		btnNewButton.setForeground(new Color(240, 248, 255));
-		btnNewButton.setBackground(new Color(255, 140, 0));
+		btnNewButton.setBackground(new Color(128, 0, 0));
 		btnNewButton.setBorder(null);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -87,6 +87,8 @@ public class Register extends JFrame {
 				if(new_id>=0) {
 					System.out.println("Tao thanh cong tai khoan moi voi id = "+new_id);
 					JOptionPane.showMessageDialog(null, "Đăng ký thành công!");
+                                        Login lg = new Login();
+                                        lg.setVisible(true);
 				}else {
 					JOptionPane.showMessageDialog(null, "Đăng ký thất bại!");
 				}
@@ -95,12 +97,12 @@ public class Register extends JFrame {
 		});
 		btnNewButton.setFocusable(false);
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton.setBounds(72, 151, 110, 29);
+		btnNewButton.setBounds(300, 151, 110, 29);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("H\u1EE7y");
 		btnNewButton_1.setForeground(new Color(240, 248, 255));
-		btnNewButton_1.setBackground(new Color(255, 105, 180));
+		btnNewButton_1.setBackground(new Color(123, 104, 238));
 		btnNewButton_1.setBorder(null);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -111,7 +113,7 @@ public class Register extends JFrame {
 		});
 		btnNewButton_1.setFocusable(false);
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton_1.setBounds(214, 151, 110, 29);
+		btnNewButton_1.setBounds(180, 151, 110, 29);
 		contentPane.add(btnNewButton_1);
 		
 		password_input = new JPasswordField();

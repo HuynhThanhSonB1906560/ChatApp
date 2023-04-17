@@ -54,6 +54,12 @@ public class Login extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+                JLabel lblNewLabe0 = new JLabel("Đăng nhập");
+                lblNewLabe0.setFont(new Font("Tahoma", Font.PLAIN, 26));
+                lblNewLabe0.setForeground(Color.green);
+                lblNewLabe0.setBounds(168, 10, 128, 27);
+                contentPane.add(lblNewLabe0);
+                
 		JLabel lblNewLabel = new JLabel("T\u00EAn \u0111\u0103ng nh\u1EADp");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblNewLabel.setBounds(10, 45, 128, 27);
@@ -93,7 +99,7 @@ public class Login extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton.setBounds(50, 121, 134, 34);
+		btnNewButton.setBounds(279, 131, 134, 34);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("H\u1EE7y");
@@ -109,7 +115,7 @@ public class Login extends JFrame {
 			}
 		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		btnNewButton_1.setBounds(194, 121, 128, 34);
+		btnNewButton_1.setBounds(145, 131, 128, 34);
 		contentPane.add(btnNewButton_1);
 	}
 

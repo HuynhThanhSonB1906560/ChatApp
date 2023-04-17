@@ -71,7 +71,7 @@ public class MainMenu extends JFrame {
 		this.um = new UserManagement();
 		this.numberTotalUser = um.getNumberUser();
 		
-		setTitle("HiChat");
+		setTitle("ChatApp");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 673, 379);
 		contentPane = new JPanel();
@@ -139,7 +139,9 @@ public class MainMenu extends JFrame {
 		panelInformation.add(lb_Information);
 		
 		JButton btnLogOut = new JButton("\u0110\u0103ng xu\u1EA5t");
-		btnLogOut.setBorder(null);
+		btnLogOut.setForeground(new Color(240, 248, 255));
+		btnLogOut.setBackground(new Color(128, 0, 0));
+                btnLogOut.setBorder(null);
 		btnLogOut.setFocusable(false);
 		btnLogOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -152,6 +154,8 @@ public class MainMenu extends JFrame {
 		panelInformation.add(btnLogOut);
 		
 		JButton btnDeleteChat = new JButton("X\u00F3a chat");
+                btnDeleteChat.setForeground(new Color(240, 248, 255));
+		btnDeleteChat.setBackground(new Color(123, 104, 238));
 		btnDeleteChat.setBorder(null);
 		btnDeleteChat.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -266,6 +270,7 @@ public class MainMenu extends JFrame {
 					msg[i].setVisible(false);
 				}
 				Message[] msgs = conversation.getListMessage();
+                                System.out.println(msgs);
 				for(int i=0;i<msgs.length;i++) {
 					String text = new String();
 					String name = new String();
